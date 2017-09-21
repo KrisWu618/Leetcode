@@ -1,7 +1,8 @@
 
 public class LongestContinuousIncreasingSubsequence {
 	//Given an unsorted array of integers, find the length of longest continuous increasing subsequence.
-    public static int findLengthOfLCIS(int[] nums) {
+
+	public static int findLengthOfLCIS(int[] nums) {
 		if(nums == null | nums.length == 0) return 0;
 		int count = 0,maxs = 0;
 		for(int i =0; i < nums.length - 1; i++) {
@@ -12,6 +13,7 @@ public class LongestContinuousIncreasingSubsequence {
 		}
         return maxs+1;
     }
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub	
