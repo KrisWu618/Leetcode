@@ -19,5 +19,12 @@ public class RemovedLinkedList_203 {
 	        return head;
 	        
 	    }
+	 
+	 public ListNode removeElements_Recursive(ListNode head, int val) {
+		 if(head == null) return head;
+		 head.next = removeElements_Recursive(head.next,val);
+		 return head.val == val ? head.next : head;
+	 }
+	 
 
 }
