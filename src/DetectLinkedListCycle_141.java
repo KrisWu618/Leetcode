@@ -17,8 +17,11 @@ public class DetectLinkedListCycle_141 {
 		 Set<ListNode> s = new HashSet<>();
 		 
 		 while(head != null) {
-			 if(s.contains(head)) { return true;
-			 }else{s.add(head);}
+			 if(s.contains(head)) { 
+				 return true;
+			 }else{
+				 s.add(head);
+			 } 
 			 
 			 head = head.next;
 		 }
@@ -32,7 +35,9 @@ public class DetectLinkedListCycle_141 {
 		ListNode slow = head;
 		ListNode fast = head.next;
 		while(slow != fast) {
-			if(fast == null || fast.next == null) {return false;}
+			if(fast == null || fast.next == null) {
+				return false;
+				}
 			slow = slow.next;
 			fast = fast.next.next;
 		}
