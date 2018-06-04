@@ -1,6 +1,6 @@
 package BinaryTree;
 
-import BinaryTree.InvertBinaryTree_226.TreeNode;
+
 
 public class LowestCommonAncestorofBinarySearchTree_235 {
 	public class TreeNode{
